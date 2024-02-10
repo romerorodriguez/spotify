@@ -1,0 +1,12 @@
+<div class="section--generic">
+    <h1 class="section--generic__title">Titulo</h1>
+
+    <div class="section--generic__player--zone">
+         <ul class="player--list" [ngClass]="{'card-small':mode === 'small', 'card-big':mode === 'big'}"> <!--tipo de if, pero enfocado a clases, si no encuentra una sigue con la siguiente -->
+              <li *ngFor="let player of dataTracks"> <!-- aqui vemos dataTracks, se envia desde tracks-page -->
+                <!-- {{ player.name }} -->
+                 <app-card-player [track]="player" [mode]="mode"></app-card-player> 
+             </li> 
+        </ul> 
+    </div>
+</div>

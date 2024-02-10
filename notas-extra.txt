@@ -1,0 +1,177 @@
+comandos para crear el proyecto llamado spotify usando la version de angular 12.2.18 y nvm 12.22.12
+Spotify: 
+ng new spotify --routing --style=css
+n
+ng serve/ng s --port=4100
+no
+ng s --host=0.0.0.0 --port=4099
+et-ExecutionPolicy RemoteSigned -Scope Process
+Spotify-a
+npm install -g @angular/cli
+angular new
+ng new spotify-a
+css
+n
+
+Dar permiso para inicializar : Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iniciar proyecto : ng serve
+
+ng g c shared/components/side-bar
+ng g c shared/components/play-list-body
+ng g c shared/components/play-list-header
+ng g m pages/home
+angular crea componentes dentro de la carpeta shared/ con una carpeta llamada components  y dentro de ella, 
+se crea un componente/carpeta llamado side-bar. Hacer lo mismo con media-player y header-user.
+
+ng g c modules/auth/pages/auth 
+angular crea componetes dentro de la carpeta modules en auth/crea carpeta llamada pages y una subcarpeta llamada auth,
+esto nos dara nuestros 4 componetes
+ng g c modules/history/pages/history
+ng g c modules/tracks/pages/tracks 
+ng g c modules/home/pages/HomePage 
+
+ng g m shared
+angular crea un modulo en la carpeta shared, estenos da un archivo llamado app.module.ts 
+
+ng g m modules/History --routing
+crea dentro de history un archivo llamado history.module.ts (modulo) y un archivo de rutas  que se llama history-routing.module.ts 
+ng g m modules/auth --routing
+ng g m modules/home --routing
+ng g m modules/tracks --routing
+
+En el archivo "app.router.ts" se agregan las rutas
+agregamos los imports a app.module.ts
+
+
+{   /*objeto principal que contiene data*/
+    "data": [ /*arreglo*/
+        { /*datos no relacionales se almacenan en un json*/
+            "_id": 1,
+            "name": "Getting Over",
+            "album": "One Love",
+            "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+            "artist": {
+                "name": "David Guetta",
+                "nickname": "David Guetta",
+                "nationality": "FR"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track.mp3"
+        },
+        {
+            "_id": 2,
+            "name": "Snow Tha Product || BZRP Music Sessions #39",
+            "album": "BZRP Music Sessions",
+            "cover": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/9c/b9/d0/9cb9d017-fcf6-28c6-81d0-e9ac5b0f359e/pr_source.png/800x800cc.jpg",
+            "artist": {
+                "name": "Snow",
+                "nickname": "Snow",
+                "nationality": "US"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-1.mp3"
+        },
+        {
+            "_id": 3,
+            "name": "Calypso (Original Mix)",
+            "album": "Round Table Knights",
+            "cover": "https://cdns-images.dzcdn.net/images/cover/1db3f8f185e68f26feaf0b9d72ff1645/350x350.jpg",
+            "artist": {
+                "name": "Round Table Knights",
+                "nickname": "Round Table Knights",
+                "nationality": "US"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-2.mp3"
+        },
+        {
+            "_id": 4,
+            "name": "Bad Habits",
+            "album": "Ed Sheeran",
+            "cover": "https://www.lahiguera.net/musicalia/artistas/ed_sheeran/disco/11372/tema/25301/ed_sheeran_bad_habits-portada.jpg",
+            "artist": {
+                "name": "Ed Sheeran",
+                "nickname": "Ed Sheeran",
+                "nationality": "UK"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-4.mp3"
+        },
+        {
+            "_id": 5,
+            "name": "BEBE (Official Video)",
+            "album": "Giolì & Assia",
+            "cover": "https://i.scdn.co/image/ab67616d0000b27345ca41b0d2352242c7c9d4bc",
+            "artist": {
+                "name": "Giolì & Assia",
+                "nickname": "Giolì & Assia",
+                "nationality": "IT"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-3.mp3"
+        },
+        {
+            "_id": 6,
+            "name": "T.N.T. (Live At River Plate, December 2009)",
+            "album": "AC/DC",
+            "cover": "https://cdns-images.dzcdn.net/images/cover/ba5eaf2f3a49768164d0728b7ba64372/500x500.jpg",
+            "artist": {
+                "name": "AC/DC",
+                "nickname": "AC/DC",
+                "nationality": "US"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-5.mp3"
+        },
+        {
+            "_id": 7,
+            "name": "50 Cent - Candy Shop (feat. Olivia)",
+            "album": "50 Cent",
+            "cover": "https://i.scdn.co/image/ab67616d0000b27391f7222996c531b981e7bb3d",
+            "artist": {
+                "name": "50 Cent",
+                "nickname": "50 Cent",
+                "nationality": "US"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-6.mp3"
+        },
+        {
+            "_id": 8,
+            "name": "Bésame💋",
+            "album": "Valentino Ft MTZ Manuel Turizo (Video Oficial)",
+            "cover": "https://i1.sndcdn.com/artworks-000247627460-1hqnjr-t500x500.jpg",
+            "artist": {
+                "name": "Valentino",
+                "nickname": "Valentino",
+                "nationality": "CO"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:3000/track-7.mp3"
+        }
+    ]
+}

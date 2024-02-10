@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div class="tracks-page">
+    <app-side-bar></app-side-bar>
+   
+    
+    <!---section 1-->
+    <app-section-generic [dataTracks]="mockTracksList" [mode]="'small'" [title]="'!la mejor musica del mundo¡'"></app-section-generic>
+
+    <!---section 1-->
+    <app-section-generic [dataTracks]="mockTracksList" [mode]="'big'" [title]="'!la mejor de la musica¡'"></app-section-generic>
+</div>
+<app-media-player></app-media-player>

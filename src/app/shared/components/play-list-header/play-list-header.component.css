@@ -1,0 +1,8 @@
+.play-list-header {
+    display: flex;
+    height: 18rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: blue;
+}

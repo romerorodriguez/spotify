@@ -1,0 +1,63 @@
+//Assets
+
+1. Importar todos los recursos estaticos necesarios:
+Fuentes, Style, Iconos, etc.
+
+https://iconscout.com/
+https://fonts.google.com/
+Fuente: poppins (400 regular, 500 medium, 600 Semibold)
+
+2. Dataset
+Datos de prueba: 
+
+3. Brand color
+Establecer las variables de diseño:
+Colores, fuentes, bordes, etc.
+
+3. Design logic
+- Auth
+    -routes
+    -componente
+    -services
+    -pipes
+    ...
+- Home
+- Tracks
+- History
+- Favorites 
+
+4. Scaffoding
+"Andamio", estructurar nuestros directiorios, archivos para fascilitar las 
+mantenibilidades y el escalamiento.
+
+5. routes
+-Lazyload: Carga perezosa
+-Optimizacion de la app
+Lazyload en Angular. 
+Hoy en dia todo proyecto de angular deberia de utilizarse el patron Lazyload o carga perezosa para manejar la experiencia de usario 
+aumentando la velocidad de carga de la aplicacion.
+Es una carga asincrona, o difirida o peresoza, es un patron de diseño que se utiliza para aumentar la velocidad de carga de una 
+aplicacion y consiste en rastrear la inicializacion de algunos componentes u objetos hasta el momento de su utilizacion. Este 
+proceso mejora el rendimiento de las aplicaciones, puesto que al iniciar la aplicacion solo se inicializara los componentes
+del modulo principal (app.modules.ts) y el resto de los componentes se ubican en modulos diferentes y que se iran cargando 
+a medida que lo vayamos necesitando.
+Por ejemplo: imagina que tenemos una aplicacion para vender bicicletas, cuando cargamos la aplicacion solo se cargara el componente
+para mostrar las bicicletas en venta, pero los componentes referidos a la autenticacion (login, register, forgot password, etc) 
+se carga en un modulo por ejemplo llamado Auth y que no se cargará hasta que no llamemos a alguno de los componentes que hay dentro
+(login, register, forgot password, etc). De igual forma podriamos tener un modulo para las ventas donde tendriamos los componentes de la 
+cesta, del listado de los pedidos de un usuario, tarjeta de credito, etc. Para utilizar Lazyload hacemos un llamado mediante el
+sistema de rutas de angular y este modulo a su vez tiene rutas hijas que se encargan de cargar un componente solicitado por el usuario 
+ng g c modules/home/pages/HomePage  angular genera un componente dentro de la carpeta modules, en home,
+la carpeta se llamara pages y dentro de esta crearas los componentes HomePage
+
+6. path
+-Establecer alias a rutas de Estructurar 
+-@core
+-@modules
+-...
+
+7. Pages
+-componentes
+-modules
+-services
+-...
